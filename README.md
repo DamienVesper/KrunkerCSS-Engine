@@ -4,7 +4,7 @@
 <br>
 
 <div align="center">
-    <img src="https://img.shields.io/github/v/release/DamienVesper/KrunkerCSSEngine?style=for-the-badge&color=d442f5b">
+    <img src="https://img.shields.io/github/v/release/DamienVesper/KrunkerCSSEngine?style=for-the-badge&color=d442f5">
     <img src="https://img.shields.io/github/contributors/DamienVesper/KrunkerCSSEngine?style=for-the-badge&color=d442f5">
     <img src="https://img.shields.io/github/languages/code-size/DamienVesper/KrunkerCSSEngine?style=for-the-badge&color=d442f5">
 </div>
