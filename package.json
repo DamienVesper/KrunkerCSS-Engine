@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DamienVesper/KrunkerCSSStarter.git"
+    "url": "git+https://github.com/DamienVesper/KrunkerCSS-Engine.git"
   },
   "keywords": [
     "krunker",
@@ -19,9 +19,9 @@
   "author": "DamienVesper",
   "license": "AGPL-3.0",
   "bugs": {
-    "url": "https://github.com/DamienVesper/KrunkerCSSStarter/issues"
+    "url": "https://github.com/DamienVesper/KrunkerCSS-Engine/issues"
   },
-  "homepage": "https://github.com/DamienVesper/KrunkerCSSStarter#readme",
+  "homepage": "https://github.com/DamienVesper/KrunkerCSS-Engine#readme",
   "devDependencies": {
     "@types/css-minimizer-webpack-plugin": "^3.0.2",
     "@types/mini-css-extract-plugin": "^2.0.1",
