@@ -1,8 +1,8 @@
 {
   "name": "krunker-css-starter",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A starter template for customizing the Krunker CSS.",
-  "main": "index.js",
+  "main": "src/index.tsx",
   "scripts": {
     "build": "webpack --config ./webpack/webpack.prod.ts",
     "dev": "webpack serve --config ./webpack/webpack.dev.ts",
@@ -34,6 +34,7 @@
     "@typescript-eslint/parser": "^4.28.2",
     "copy-webpack-plugin": "^9.0.1",
     "css-loader": "^5.2.6",
+    "css-minimizer-webpack-plugin": "^3.0.2",
     "eslint": "^7.30.0",
     "eslint-config-standard": "^16.0.3",
     "eslint-plugin-import": "^2.23.4",
@@ -56,7 +57,6 @@
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
-    "css-minimizer-webpack-plugin": "^3.0.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   }
