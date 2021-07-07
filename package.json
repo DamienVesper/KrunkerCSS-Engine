@@ -4,7 +4,10 @@
   "description": "A starter template for customizing the Krunker CSS.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --config ./webpack/webpack.prod.ts",
+    "dev": "webpack --config ./webpack/webpack.dev.ts",
+    "dev:serve": "webpack serve --config ./webpack/webpack.dev.ts",
+    "dev:lint": "eslint . --fix --ext .ts"
   },
   "repository": {
     "type": "git",
