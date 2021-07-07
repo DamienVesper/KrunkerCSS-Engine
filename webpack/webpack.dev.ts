@@ -34,7 +34,8 @@ const config = merge(common, {
     output: {
         path: path.resolve(__dirname, `../dist`),
         publicPath: `/dist`,
-        filename: `bundle.min.js`
+        filename: `bundle.min.js`,
+        clean: true
     },
 
     devServer: {

@@ -37,7 +37,10 @@ const config: Configuration = {
     },
 
     plugins: [
-        new Webpack.ProgressPlugin()
+        new Webpack.ProgressPlugin(),
+        new Webpack.BannerPlugin({
+            banner: `[file]\nCreated with the Krunker CSS Engine.\nLicensed under the terms of the GNU AGPL v3.` // You can customize this as you wish; it will appear at the top of each of your files.
+        })
     ]
 };
 

@@ -1,6 +1,6 @@
-<h1 align="center">KrunkerCSS Starter</h1>
+<h1 align="center">KrunkerCSS Engine</h1>
 
-<h3 align="center">A template for developing custom CSS for Krunker.</h3>
+<h3 align="center">An engine for developing custom CSS for Krunker.</h3>
 <br>
 
 <div align="center">
@@ -20,7 +20,8 @@ yarn
 This will create a `node_modules` directory in that of your project and add the packages there.
 
 ### Compiling the Project
-This project utilizes [Webpack](https://webpack.js.org) to compile Sass to normal, browser-renderable CSS. To build for production, run `yarn build`. To setup a development server, run `yarn dev:serve`. To simply generate a sourcemap for development, run `yarn dev`.
+This project utilizes [Webpack](https://webpack.js.org) to compile Sass to normal, browser-renderable CSS.
+To build for production, run `yarn build`. To setup a development server, run `yarn dev`.
 
 ### Contributing
 If you would like to contribute to this project, you may fork the repository and open a pull request.

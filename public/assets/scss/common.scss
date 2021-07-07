@@ -1,5 +1,7 @@
-@import './root/main.scss';
-@import './root/social.scss';
+/*!
+ * common.scss
+ * This is just for the React container in the development server. You won't normally need to touch this.
+ */
 
 html, body, #root, iframe {
     width: 100%;
