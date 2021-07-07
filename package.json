@@ -1,7 +1,7 @@
 {
   "name": "krunkercss-engine",
   "version": "1.0.1",
-  "description": "A starter template for customizing the Krunker CSS.",
+  "description": "An engine for easier development of Krunker CSS.",
   "main": "src/index.tsx",
   "scripts": {
     "build": "webpack --config ./webpack/webpack.prod.ts",
