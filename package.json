@@ -1,0 +1,23 @@
+{
+  "name": "krunker-css-starter",
+  "version": "1.0.0",
+  "description": "A starter template for customizing the Krunker CSS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DamienVesper/KrunkerCSSStarter.git"
+  },
+  "keywords": [
+      "krunker",
+      "css"
+  ],
+  "author": "DamienVesper",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/DamienVesper/KrunkerCSSStarter/issues"
+  },
+  "homepage": "https://github.com/DamienVesper/KrunkerCSSStarter#readme"
+}
