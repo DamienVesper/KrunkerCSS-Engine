@@ -11,13 +11,29 @@
     "url": "git+https://github.com/DamienVesper/KrunkerCSSStarter.git"
   },
   "keywords": [
-      "krunker",
-      "css"
+    "krunker",
+    "css"
   ],
   "author": "DamienVesper",
   "license": "AGPL-3.0",
   "bugs": {
     "url": "https://github.com/DamienVesper/KrunkerCSSStarter/issues"
   },
-  "homepage": "https://github.com/DamienVesper/KrunkerCSSStarter#readme"
+  "homepage": "https://github.com/DamienVesper/KrunkerCSSStarter#readme",
+  "devDependencies": {
+    "@types/node": "^16.0.1",
+    "@types/webpack": "^5.28.0",
+    "@types/webpack-dev-server": "^3.11.5",
+    "css-loader": "^5.2.6",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^3.0.0",
+    "ts-loader": "^9.2.3",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.5",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "webpack": "^5.43.0"
+  }
 }
