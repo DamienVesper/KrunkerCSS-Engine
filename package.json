@@ -1,6 +1,6 @@
 {
   "name": "krunker-css-starter",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "A starter template for customizing the Krunker CSS.",
   "main": "index.js",
   "scripts": {
