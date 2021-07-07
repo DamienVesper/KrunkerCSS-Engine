@@ -21,7 +21,18 @@ This will create a `node_modules` directory in that of your project and add the 
 
 ### Compiling the Project
 This project utilizes [Webpack](https://webpack.js.org) to compile Sass to normal, browser-renderable CSS.
-To build for production, run `yarn build`. To setup a development server, run `yarn dev`.
+
+To build for production, run
+```sh
+yarn build
+``` 
+
+To setup a development server, run
+```
+yarn dev
+```
+
+This will setup a connection at `http://localhost:8080` for you to access.
 
 ### Contributing
 If you would like to contribute to this project, you may fork the repository and open a pull request.

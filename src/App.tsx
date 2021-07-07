@@ -11,7 +11,7 @@ import '../public/assets/scss/root/social.scss';
 class App extends React.Component {
     render = () => {
         return (
-            <iframe src="https://krunker.io" frameBorder="0"></iframe>
+            <iframe src={`https://krunker.io${window.location.pathname}`} frameBorder="0"></iframe>
         );
     }
 }
