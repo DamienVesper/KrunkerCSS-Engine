@@ -1,50 +1,35 @@
 import merge from 'webpack-merge';
 import common from './webpack.common';
 
-import * as Webpack from 'webpack';
 import * as path from 'path';
+
+import CopyWebpackPlugin from 'copy-webpack-plugin';
+import RemovePlugin from 'remove-files-webpack-plugin';
+
+const docLocation = `D:\\Users\\DamienVesper\\Documents`;
 
 const config = merge(common, {
     mode: `development`,
-    devtool: `source-map`,
-
-    entry: path.resolve(__dirname, `../src/index.tsx`),
-
-    module: {
-        rules: [
-            {
-                test: /\.s[ac]ss$/i,
-                use: [
-                    `style-loader`,
-                    `css-loader`,
-                    `sass-loader`
-                ]
-            },
-            {
-                test: /\.css$/,
-                use: [`style-loader`, `css-loader`]
-            }
-        ]
-    },
 
     plugins: [
-        new Webpack.HotModuleReplacementPlugin()
-    ],
-
-    output: {
-        path: path.resolve(__dirname, `../dist`),
-        publicPath: `/dist`,
-        filename: `bundle.min.js`,
-        clean: true
-    },
-
-    devServer: {
-        contentBase: path.resolve(__dirname, `../public`),
-        historyApiFallback: true,
-        port: 8080,
-        publicPath: `http://localhost:3000/dist`,
-        hotOnly: true
-    }
+        new CopyWebpackPlugin({
+            patterns: [{
+                from: path.resolve(__dirname, `../dist`),
+                to: `${docLocation}\\KrunkerResourceSwapper\\css`
+            }]
+        }),
+        new RemovePlugin({
+            after: {
+                root: `${docLocation}\\KrunkerResourceSwapper\\css`,
+                include: [
+                    `main_custom.min.js`,
+                    `social_custom.min.js`,
+                    `main_custom.min.js.map`,
+                    `social_custom.min.js.map`
+                ]
+            }
+        })
+    ]
 });
 
 export default config;

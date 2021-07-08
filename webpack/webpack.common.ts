@@ -1,11 +1,20 @@
 import * as Webpack from 'webpack';
 import * as WebpackDevServer from 'webpack-dev-server';
 
+import MiniCSSExtractPlugin from 'mini-css-extract-plugin';
+
+import * as path from 'path';
+
 interface Configuration extends Webpack.Configuration {
     devServer?: WebpackDevServer.Configuration
 }
 
 const config: Configuration = {
+    entry: {
+        main_custom: path.resolve(__dirname, `../src/main.ts`),
+        social_custom: path.resolve(__dirname, `../src/social.ts`)
+    },
+
     resolve: {
         extensions: [`*`, `.scss`, `.css`, `.js`, `.jsx`, `.ts`, `.tsx`]
     },
@@ -26,6 +35,10 @@ const config: Configuration = {
                 exclude: /node_modules/
             },
             {
+                test: /\.s[ac]ss$/i,
+                use: [`sass-loader`, MiniCSSExtractPlugin.loader, `css-loader`]
+            },
+            {
                 test: /\.(png|svg|jpg|jpeg|gif)$/i,
                 type: `asset/resource`
             },
@@ -40,8 +53,15 @@ const config: Configuration = {
         new Webpack.ProgressPlugin(),
         new Webpack.BannerPlugin({
             banner: `[file]\nCreated with the Krunker CSS Engine.\nLicensed under the terms of the GNU AGPL v3.` // You can customize this as you wish; it will appear at the top of each of your files.
-        })
-    ]
+        }),
+        new MiniCSSExtractPlugin()
+    ],
+
+    output: {
+        path: path.resolve(__dirname, `../dist`),
+        filename: `[name].min.js`,
+        clean: true
+    }
 };
 
 export default config;

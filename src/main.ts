@@ -3,4 +3,4 @@
  * @author DamienVesper
  */
 
-import '../../public/assets/scss/root/social.scss';
+import '../scss/main.scss';
