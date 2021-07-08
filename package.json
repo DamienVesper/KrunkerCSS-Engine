@@ -1,6 +1,6 @@
 {
   "name": "krunkercss-engine",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "An engine for easier development of Krunker CSS.",
   "main": "src/index.tsx",
   "scripts": {
