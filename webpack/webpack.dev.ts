@@ -6,6 +6,10 @@ import * as path from 'path';
 import CopyWebpackPlugin from 'copy-webpack-plugin';
 import RemovePlugin from 'remove-files-webpack-plugin';
 
+/**
+ * The location of the Documents folder on your system.
+ * This will need to be changed in accordance with your install location.
+ */
 const docLocation = `C:\\Users\\Username\\Documents`;
 
 const config = merge(common, {
