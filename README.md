@@ -4,9 +4,9 @@
 <br>
 
 <div align="center">
-    <img src="https://img.shields.io/github/v/release/DamienVesper/KrunkerCSS-Engine?style=for-the-badge&color=d442f5">
-    <img src="https://img.shields.io/github/contributors/DamienVesper/KrunkerCSS-Engine?style=for-the-badge&color=d442f5">
-    <img src="https://img.shields.io/github/languages/code-size/DamienVesper/KrunkerCSS-Engine?style=for-the-badge&color=d442f5">
+    <img src="https://img.shields.io/github/v/release/KrunkerCSS/Engine?style=for-the-badge&color=d442f5">
+    <img src="https://img.shields.io/github/contributors/KrunkerCSS/Engine?style=for-the-badge&color=d442f5">
+    <img src="https://img.shields.io/github/languages/code-size/KrunkerCSS/Engine?style=for-the-badge&color=d442f5">
 </div>
 
 ### Installing Dependencies
