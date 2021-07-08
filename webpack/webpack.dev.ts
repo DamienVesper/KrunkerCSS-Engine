@@ -10,6 +10,7 @@ const docLocation = `D:\\Users\\DamienVesper\\Documents`;
 
 const config = merge(common, {
     mode: `development`,
+    devtool: false,
 
     plugins: [
         new CopyWebpackPlugin({
@@ -23,9 +24,7 @@ const config = merge(common, {
                 root: `${docLocation}\\KrunkerResourceSwapper\\css`,
                 include: [
                     `main_custom.min.js`,
-                    `social_custom.min.js`,
-                    `main_custom.min.js.map`,
-                    `social_custom.min.js.map`
+                    `social_custom.min.js`
                 ]
             }
         })
