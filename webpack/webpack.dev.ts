@@ -6,7 +6,7 @@ import * as path from 'path';
 import CopyWebpackPlugin from 'copy-webpack-plugin';
 import RemovePlugin from 'remove-files-webpack-plugin';
 
-const docLocation = `D:\\Users\\DamienVesper\\Documents`;
+const docLocation = `C:\\Users\\Username\\Documents`;
 
 const config = merge(common, {
     mode: `development`,
