@@ -36,7 +36,7 @@ const config: Configuration = {
             },
             {
                 test: /\.s[ac]ss$/i,
-                use: [`sass-loader`, MiniCSSExtractPlugin.loader, `css-loader`]
+                use: [MiniCSSExtractPlugin.loader, `css-loader`, `sass-loader`]
             },
             {
                 test: /\.(png|svg|jpg|jpeg|gif)$/i,
