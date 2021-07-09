@@ -1,9 +1,6 @@
 import merge from 'webpack-merge';
 import common from './webpack.common';
 
-import * as path from 'path';
-
-import CopyWebpackPlugin from 'copy-webpack-plugin';
 import RemovePlugin from 'remove-files-webpack-plugin';
 
 /**
@@ -16,13 +13,11 @@ const config = merge(common, {
     mode: `development`,
     devtool: false,
 
+    output: {
+        path: `${docLocation}\\KrunkerResourceSwapper\\css`
+    },
+
     plugins: [
-        new CopyWebpackPlugin({
-            patterns: [{
-                from: path.resolve(__dirname, `../dist`),
-                to: `${docLocation}\\KrunkerResourceSwapper\\css`
-            }]
-        }),
         new RemovePlugin({
             after: {
                 root: `${docLocation}\\KrunkerResourceSwapper\\css`,
