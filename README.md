@@ -32,7 +32,7 @@ To setup a development server, run
 yarn dev
 ```
 
-This will setup a connection at `http://localhost:8080` for you to access.
+This will build your SCSS directly to the official client.
 
 ### Contributing
 If you would like to contribute to this project, you may fork the repository and open a pull request.
