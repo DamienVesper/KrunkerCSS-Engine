@@ -27,7 +27,7 @@ To build for production, run
 yarn build
 ``` 
 
-To setup a development server, run
+To build for development, run
 ```
 yarn dev
 ```
